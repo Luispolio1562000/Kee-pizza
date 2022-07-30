@@ -77,59 +77,58 @@
         </div>
       </article>
       <hr class="border border-secondary">
-      <section class="m-3">
-        <div >
-          <div id="Tablapedido">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Producto.</th>
-                  <th scope="col">Descripción.</th>
-                  <th scope="col">Cantidad.</th>
-                  <th scope="col">Precio.</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <div class="d-flex flex-row ">
+        <div class="col-xl-9 col-lg-9 col-md-7 col-sm-10 m-3" >
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th scope="col">Producto.</th>
+                <th scope="col">Descripción.</th>
+                <th scope="col">Cantidad.</th>
+                <th scope="col">Precio.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          </table>
         </div>
-      </section>
-      <div class="d-flex justify-content-end">
-        <aside class=" m-2" id="CartTotal">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-primary btn-lg " type="button" id="button-addon2">Aplicar</button>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-10 d-flex justify-content-end m-3">
+          <aside class=" m-2" id="CartTotal">
+            <div class="input-group mb-3 m-2">
+              <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-primary btn-lg " type="button" id="button-addon2">Aplicar</button>
+            </div>
+            <hr class="border border-secondary">
+            <div class="">
+              <p class="fs-5 fw-bold">Subtotal:</p>
+              <p class="fs-5 fw-bold">Costo de envío:</p>
+              <p class="fs-5 fw-bold">Descuentos:</p>
+              <p class="fs-5 fw-bold">Total:</p>
+            </div>
+            <hr class="border border-secondary">
+            <div class="d-flex justify-content-center" >
+            <button type="button" class="btn btn-primary">Realizar pedido</button>
           </div>
-          <hr class="border border-secondary">
-          <div class="">
-            <p class="fs-5 fw-bold">Subtotal:</p>
-            <p class="fs-5 fw-bold">Costo de envío:</p>
-            <p class="fs-5 fw-bold">Descuentos:</p>
-            <p class="fs-5 fw-bold">Total:</p>
-          </div>
-          <hr class="border border-secondary">
-          <div class="d-flex justify-content-center" >
-          <button type="button" class="btn btn-primary">Realizar pedido</button>
+          </aside>
         </div>
-        </aside>
       </div>
     </main>
     <footer>Pie de página</footer>
