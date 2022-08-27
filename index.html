@@ -1,202 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="IMG/pizza.ico" type="image/x-icon">
-    <title>Kee pizza</title>
-  </head>
-  <body class="bg-secondary bg-opacity-50">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-              src="IMG/Logo_nav.jpeg"
-              alt=""
-              width="120"
-              height=""
-              class="d-inline-block align-text-top"
-            />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-flex justify-content-end ">
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="./CSS/fontello.css">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="IMG/pizza.ico" type="image/x-icon">
+  <title>Kee pizza</title>
+</head>
+
+<body class="bg-secondary bg-opacity-50">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="IMG/Logo Secundario.png" alt="" width="200" height="" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex justify-content-end ">
+        <div class="collapse navbar-collapse col-lg-3 col-md-6 mb-4 mb-md-0" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active d-flex flex-column" aria-current="page" href="./HTML/Menú.html">
+              <a class="nav-link active d-flex flex-column  fw-bold " aria-current="page" href="./HTML/Menú.html">
                 Pizzas.
-                <img src="IMG/pizza_nav.png" width="55" alt=""  srcset="">
+                <img class="align-self-center" src="IMG/pizza_nav.png" width="45" alt="" srcset="">
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active d-flex flex-column" aria-current="page" href="./HTML/Menú.html">
+              <a class="nav-link active d-flex flex-column fw-bold " aria-current="page" href="./HTML/Menú.html">
                 Arma tu pizza.
-                <img src="IMG/sombrero-de-cocinero.png" width="55" alt=""  srcset="">
+                <img class="align-self-center" class="" src="IMG/sombrero-de-cocinero.png" width="45" alt="" srcset="">
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active d-flex flex-column" href="#">Promociones.
-                <img src="IMG/caja-de-pizza.png" width="55" alt="" srcset="">
+              <a class="nav-link active d-flex flex-column fw-bold " href="#">Promociones.
+                <img class="align-self-center" src="IMG/caja-de-pizza.png" width="45" alt="" srcset="">
               </a>
             </li>
             <li class="nav-item  ">
-              <a class="nav-link active d-flex flex-column" href="#">Adicionales.
-                <img src="IMG/complementos.png" width="55" alt="" srcset="">
+              <a class="nav-link active d-flex flex-column fw-bold " href="#">Adicionales.
+                <img class="align-self-center" src="IMG/complementos.png" width="45" alt="" srcset="">
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active d-flex flex-column " href="HTML/Carrito.html">
-                <img class="d-flex justify-content-center" src="IMG/carros.png" width="65" alt="" srcset="">
-                <label class="" for="">$ </label>
-              </a>
+              <div>
+                <button class="btn d-flex flex-column" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <img class="align-self-center" class="d-flex justify-content-center" src="IMG/bolsa-de-la-compra.png"
+                    width="45" alt="" srcset="">
+                  <label class="" for="">$ </label>
+                </button>
+              </div>
             </li>
           </ul>
         </div>
       </div>
+    </div>
+  </nav>
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end border border-end-0 border-warning" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Carrito de compras</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="border  border-warning">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Producto.</th>
+              <th scope="col">Descripción.</th>
+              <th scope="col">Cantidad.</th>
+              <th scope="col">Precio.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </nav>
-
-    <div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel">
-            <div class="carousel-indicators ">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner container">
-              <div class="carousel-item active">
-                <img src="IMG/Pizza 1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="IMG/Pizzas 2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </div>
-    <div class="m-3 container">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="m-3 d-flex justify-content-center fw-bold">
+        <a class="btn btn-outline-warning  " href="./HTML/Carrito.html">
+          Efectuar compra
+        </a>
+      </div>
     </div>
   </div>
-  </div>
+  <!-- Offcanvas -->
 
   <div>
-  </div>
-  
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel">
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
 
-    <footer class="bg-light text-center text-black">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!-- Section: Social media -->
-        <strong>Síguenos en nuestras redes sociales</strong>
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-          <img src="IMG/facebook.png" width="40" alt="" srcset="">
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./HTML/Menú.html">
+            <img class="img-fluid" src="IMG/Promo_1.jpg" class="d-block w-100" alt="...">
           </a>
-
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-            <img src="IMG/instagram.png" width="45" alt="" srcset="">
-          </a>
-    
-          <!-- Whatsapp -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=527712012669" role="button">
-            <img src="IMG/whatsapp.png" width="40" alt="" srcset="">
-          </a>
-          <div>
-          <hr class="border border-secondary">
-          <a class="btn btn-link fw-bold text-dark" href="HTML/Nosotros.html" role="button">Nosotros</a>
-          <hr class="border border-secondary">
         </div>
-          
-    
-        
+        <div class="carousel-item">
+          <a href="./HTML/Menú.html">
+            <img class="img-fluid" src="IMG/Promo_2.jpg" class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./HTML/Menú.html">
+            <img class="img-fluid" src="IMG/Promo_3.jpg" class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./HTML/Menú.html">
+            <img class="img-fluid" src="IMG/Promo_4.jpg" class="d-block w-100" alt="...">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+  <div class="m-3 container">
+    <div class="card m-2" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-success">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+<!-- Botón flotante -->
+  <a href="https://api.whatsapp.com/send?phone=527712012669" class="btn-wsp" target="_blank">
+    <i class="fa fa-whatsapp icono"></i>
+</a>
+<!-- Botón flotante -->
+
+  <footer class=" text-center text-black">
+
+    <!-- Grid container -->
+    <div class="container p-4">
+      <hr id="separador">
+      <!-- Section: Social media -->
+      <strong>Síguenos en nuestras redes sociales!</strong>
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-floating m-1" href="#!" role="button">
+          <img src="IMG/facebook.png" width="40" alt="" srcset="">
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" href="#!" role="button">
+          <img src="IMG/instagram.png" width="45" alt="" srcset="">
+        </a>
+
+        <!-- Whatsapp -->
+        <a class="btn btn-floating m-1" href="https://api.whatsapp.com/send?phone=527712012669"
+          role="button">
+          <img src="IMG/whatsapp.png" width="40" alt="" srcset="">
+        </a>
+
+        <hr id="separador">
+
+
+
         <!-- Section: Social media -->
-    
-    
-        
-    
-        <!-- Section: Links -->
-        <section class="">
+
+
+
+        <section class="container-fluid">
           <!--Grid row-->
-          <div class="d-flex flex-row">
+          <div class="row d-flex justify-content-center">
             <!--Grid column-->
-            <div class=" d-flex justify-content-center">
-              <h5 class="text-uppercase"></h5>
-    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nuestra empresa</h5>
+
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="index.html" class="text-primary">Inicio</a>
+                  <a href="./HTML/Nosotros.html" class="text-white">Acerca de nosotros</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-primary">Términos de uso</a>
+                  <a href="./HTML/Terminos.html" class="text-white">Términos y condiciones</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-primary">Contacto</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-primary">Aviso de privacidad</a>
+                  <a href="./HTML/Avisodepriv.html" class="text-white">Aviso de privacidad</a>
                 </li>
               </ul>
             </div>
             <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nuestra comida</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="./HTML/Ingredientes.html" class="text-white">Ingredientes</a>
+                </li>
+                <li>
+                  <a href="./HTML/Nutricion.html" class="text-white">Nutrición</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Ayuda</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="./HTML/Contacto.html" class="text-white">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="./HTML/FAQ.html" class="text-white"> FAQ</a>
+                </li>
+            </div>
+            <!--Grid column-->
+
+
           </div>
           <!--Grid row-->
         </section>
-        <!-- Section: Text -->
-        <section class="mb-4">
-          <p>
-            Lorem ipsum 
-          </p>
-        </section>
-        <!-- Section: Text -->
         <!-- Section: Links -->
-      </div>
-      <!-- Grid container -->
-    
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © Kee Pizza Todos los derechos reservados. 2022 diseño por:
-        <a class="text-black" href="">L</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="/JS/jquery.min.js"></script>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="JS/Funciones.js"></script>
-  </body>
+    </div>
+    <!-- Grid container -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+
+    </section>
+    <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-light container-fluid" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p class="text-start text-break fw-normal lh-base m-4">
+        Ofertas disponibles por tiempo limitado en el restaurante Kee pizzas que participa. Los precios pueden variar.
+        No es válido para usar junto con otros cupones o descuentos. Todas las marcas registradas de bebidas son marcas
+        registradas de nuestros proveedores asociados. Algunas de las ofertas requieren la compra de varias pizzas.
+        Algunas de las ofertas solo estarán disponibles en línea. Algunas adiciones solo estarán disponibles para pizzas
+        de ofertas especiales con un costo adicional. Otras adiciones cuestan extra. Área limitada para domicilios.
+        Puede haber una tarifa por el domicilio, la cual no podrá descontarse. Hay un mínimo en tu compra para poder
+        tener derecho a domicilios. El cliente será responsable por las tasas correspondientes.
+      </p>
+      © Kee Pizza Todos los derechos reservados. 2022 diseño por:
+      <a class="text-black" href="">Luis Gustavo</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="/JS/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="JS/Funciones.js"></script>
+</body>
+
 </html>

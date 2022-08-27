@@ -12,102 +12,55 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="shortcut icon" href="../IMG/pizza.ico" type="image/x-icon" />
     <title>Kee pizza | Menú</title>
   </head>
   <body>
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
-            <img
-              src="../IMG/Logo_nav.jpeg"
-              alt=""
-              width="120"
-              height=""
-              class="d-inline-block align-text-top"
-            />
+            <img src="../IMG/Logo Secundario.png" alt="" width="200" height="" class="d-inline-block align-text-top" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="d-flex justify-content-end">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex justify-content-end ">
+            <div class="collapse navbar-collapse col-lg-3 col-md-6 mb-4 mb-md-0" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active d-flex flex-column"
-                    aria-current="page"
-                    href="./HTML/Menú.html"
-                  >
+                  <a class="nav-link active d-flex flex-column  fw-bold " aria-current="page" href="../HTML/Menú.html">
                     Pizzas.
-                    <img
-                      src="../IMG/pizza_nav.png"
-                      width="55"
-                      alt=""
-                      srcset=""
-                    />
+                    <img class="align-self-center" src="../IMG/pizza_nav.png" width="45" alt="" srcset="">
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link active d-flex flex-column"
-                    aria-current="page"
-                    href="./HTML/Menú.html"
-                  >
+                  <a class="nav-link active d-flex flex-column fw-bold " aria-current="page" href="../HTML/Menú.html">
                     Arma tu pizza.
-                    <img
-                      src="../IMG/sombrero-de-cocinero.png"
-                      width="55"
-                      alt=""
-                      srcset=""
-                    />
+                    <img class="align-self-center" class="" src="../IMG/sombrero-de-cocinero.png" width="45" alt="" srcset="">
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active d-flex flex-column" href="#"
-                    >Promociones.
-                    <img
-                      src="../IMG/caja-de-pizza.png"
-                      width="55"
-                      alt=""
-                      srcset=""
-                    />
+                  <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Promociones.
+                    <img class="align-self-center" src="../IMG/caja-de-pizza.png" width="45" alt="" srcset="">
+                  </a>
+                </li>
+                <li class="nav-item  ">
+                  <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Adicionales.
+                    <img class="align-self-center" src="../IMG/complementos.png" width="45" alt="" srcset="">
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active d-flex flex-column" href="#"
-                    >Adicionales.
-                    <img
-                      src="../IMG/complementos.png"
-                      width="55"
-                      alt=""
-                      srcset=""
-                    />
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active d-flex flex-column"
-                    href="Carrito.html"
-                  >
-                    <img
-                      class="d-flex justify-content-center"
-                      src="../IMG/carros.png"
-                      width="65"
-                      alt=""
-                      srcset=""
-                    />
-                    <label class="" for="">$ </label>
-                  </a>
+                  <div>
+                    <button class="btn d-flex flex-column" type="button" data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <img class="align-self-center" class="d-flex justify-content-center" src="../IMG/bolsa-de-la-compra.png"
+                        width="45" alt="" srcset="">
+                      <label class="" for="">$ </label>
+                    </button>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -115,366 +68,466 @@
         </div>
       </nav>
     </div>
-    <div>
-      <ul
-        class="nav nav-pills mb-3 d-flex justify-content-center m-3"
-        id="pills-tab"
-        role="tablist"
-      >
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="pills-promociones-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-promociones"
-            type="button"
-            role="tab"
-            aria-controls="pills-promociones"
-            aria-selected="true"
+
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-end border border-end-0 border-warning" tabindex="-1" id="offcanvasRight"
+aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas-header">
+  <h5 id="offcanvasRightLabel">Carrito de compras</h5>
+  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+  <div class="border  border-warning">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Producto.</th>
+          <th scope="col">Descripción.</th>
+          <th scope="col">Cantidad.</th>
+          <th scope="col">Precio.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="m-3 d-flex justify-content-center fw-bold">
+    <a class="btn btn-outline-warning  " href="../HTML/Carrito.html">
+      Efectuar compra
+    </a>
+  </div>
+</div>
+</div>
+<!-- Offcanvas -->
+
+<!-- Menú -->
+<div>
+<ul class="nav nav-tabs d-flex justify-content-center m-3 " id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="promociones-tab" data-bs-toggle="tab" data-bs-target="#promociones" type="button" role="tab" aria-controls="promociones" aria-selected="true">Promociones</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pizzas-tab" data-bs-toggle="tab" data-bs-target="#pizzas" type="button" role="tab" aria-controls="pizzas" aria-selected="false">Pizzas</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pastas-tab" data-bs-toggle="tab" data-bs-target="#pastas" type="button" role="tab" aria-controls="pastas" aria-selected="false">Pastas</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="adicionales-tab" data-bs-toggle="tab" data-bs-target="#adicionales" type="button" role="tab" aria-controls="adicionales" aria-selected="false">Adicionales</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="promociones" role="tabpanel" aria-labelledby="promociones-tab">Promociones</div>
+  <div class="tab-pane fade" id="pizzas" role="tabpanel" aria-labelledby="pizzas-tab">
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Crea tu pizza.
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
           >
-            Promociones y paquetes.
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link "
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-          >
-            Pizzas.
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-contact-pastas"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-pastas"
-            type="button"
-            role="tab"
-            aria-controls="pills-pastas"
-            aria-selected="false"
-          >
-            Pastas y lasañas.
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-contact-bebidas"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-bebidas"
-            type="button"
-            role="tab"
-            aria-controls="pills-bebidas"
-            aria-selected="false"
-          >
-            Adicionales.
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content container" id="pills-tabContent">
-        <div
-          class="tab-pane fade show active"
-          id="pills-promociones"
-          role="tabpanel"
-          aria-labelledby="pills-promociones-tab"
-        >
-          Promociones.
-        </div>
-        <div
-          class="tab-pane fade container"
-          id="pills-profile"
-          role="tabpanel"
-          aria-labelledby="pills-profile-tab"
-        >
-          <div class="container">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    Crea tu pizza.
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong>
-                    
-                    <div class="container">
-                      <div class="card text-center m-3 d-flex flex-wrap" style="width: 18rem;">
-                        <img src="../IMG/card 1.jpg" class="card-img-top img-fluid rounded" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Pepperoni especial</h5>
-                          <p class="card-text">Totalmente cubierta de peperoni.</p>
-                          <strong> Precio:</strong> <label>$</label>
-                          <div>
-                          <a class="btn btn-primary m-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Modificar </a>
-                          <a class="btn btn-primary m-2" >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
-                              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-                            </svg>
-                          </a>
-                        </div>
-                          <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                  <select
-                                    class="form-select form-select-sm m-2"
-                                    aria-label=".form-select-sm example"
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong>
+              
+              <div class="container">
+                <div class="card text-center m-3 d-flex flex-wrap" style="width: 18rem;">
+                  <img src="../IMG/card 1.jpg" class="card-img-top img-fluid rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Pepperoni especial</h5>
+                    <p class="card-text">Totalmente cubierta de peperoni.</p>
+                    <strong> Precio:</strong> <label>$</label>
+                    <div>
+                    <a class="btn btn-success m-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Modificar </a>
+                    <a class="btn btn-success m-2" >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                    </a>
+                  </div>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <select
+                              class="form-select form-select-sm m-2"
+                              aria-label=".form-select-sm example"
+                            >
+                              <option selected>Selecciona el tamaño.</option>
+                              <option value="1">Chica</option>
+                              <option value="2">Mediana</option>
+                              <option value="3">Grande</option>
+                              <option value="3">Familiar</option>
+                            </select>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>Agrega extras a tu pizza.</strong>
+                            <select
+                              class="form-select form-select-sm m-2"
+                              aria-label=".form-select-sm example"
+                            >
+                              <option selected>
+                                Elige orilla o queso extra.
+                              </option>
+                              <option value="1">
+                                Orilla de tres quesos.
+                              </option>
+                              <option value="2">
+                                Orilla de queso mozzarella.
+                              </option>
+                              <option value="3">
+                                Orilla de queso philadelphia.
+                              </option>
+                              <option value="3">
+                                Orilla de queso gouda.
+                              </option>
+                              <option value="3">
+                                Porción extra 3 quesos.
+                              </option>
+                              <option value="3">
+                                Porción extra queso mozzarella
+                              </option>
+                              <option value="3">
+                                Porción extra queso gouda.
+                              </option>
+                            </select>
+                          </li>
+                          <li class="list-group-item">
+                              <strong>Selecciona tu tipo de masa.</strong>
+                              <div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault1"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexRadioDefault1"
                                   >
-                                    <option selected>Selecciona el tamaño.</option>
-                                    <option value="1">Chica</option>
-                                    <option value="2">Mediana</option>
-                                    <option value="3">Grande</option>
-                                    <option value="3">Familiar</option>
-                                  </select>
-                                </li>
-                                <li class="list-group-item">
-                                  <strong>Agrega extras a tu pizza.</strong>
-                                  <select
-                                    class="form-select form-select-sm m-2"
-                                    aria-label=".form-select-sm example"
+                                    Masa americana.
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault2"
+                                    checked
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexRadioDefault2"
                                   >
-                                    <option selected>
-                                      Elige orilla o queso extra.
-                                    </option>
-                                    <option value="1">
-                                      Orilla de tres quesos.
-                                    </option>
-                                    <option value="2">
-                                      Orilla de queso mozzarella.
-                                    </option>
-                                    <option value="3">
-                                      Orilla de queso philadelphia.
-                                    </option>
-                                    <option value="3">
-                                      Orilla de queso gouda.
-                                    </option>
-                                    <option value="3">
-                                      Porción extra 3 quesos.
-                                    </option>
-                                    <option value="3">
-                                      Porción extra queso mozzarella
-                                    </option>
-                                    <option value="3">
-                                      Porción extra queso gouda.
-                                    </option>
-                                  </select>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Selecciona tu tipo de masa.</strong>
-                                    <div>
-                                      <div class="form-check">
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="flexRadioDefault"
-                                          id="flexRadioDefault1"
-                                        />
-                                        <label
-                                          class="form-check-label"
-                                          for="flexRadioDefault1"
-                                        >
-                                          Masa americana.
-                                        </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="flexRadioDefault"
-                                          id="flexRadioDefault2"
-                                          checked
-                                        />
-                                        <label
-                                          class="form-check-label"
-                                          for="flexRadioDefault2"
-                                        >
-                                          Masa Romana.
-                                        </label>
-                                      </div>
-                                    </div>
-                                  </li>
-                                <li class="list-group-item">
-                                  <!---- <input
-                                    class="m-3"
-                                    type="number"
-                                    min="0"
-                                    step="1"
-                                    value="0"
-                                    size="45px"
-                                    style="width: 45px"
-                                  /> --->
-                                </li>
-                              </ul>
-                              <a href="#" class="btn btn-primary">Agregar</a
-                              >
-                            </div>
-                          </div>
-                        </div>
+                                    Masa Romana.
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                          <li class="list-group-item">
+                            <!---- <input
+                              class="m-3"
+                              type="number"
+                              min="0"
+                              step="1"
+                              value="0"
+                              size="45px"
+                              style="width: 45px"
+                            /> --->
+                          </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Agregar</a
+                        >
                       </div>
-                      
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    Especialidades.
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Pizzas de carne.
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> 
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    5 ingredientes.
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> 
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    4 ingredientes.
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> 
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
-                    3 ingredientes.
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSix"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> 
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="tab-pane fade"
-          id="pills-pastas"
-          role="tabpanel"
-          aria-labelledby="pills-contact-pastas"
-        >
-          Pastas.
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Especialidades.
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong>
+            </div>
+          </div>
         </div>
-        <div
-          class="tab-pane fade"
-          id="pills-bebidas"
-          role="tabpanel"
-          aria-labelledby="pills-contact-bebidas"
-        ></div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Pizzas de carne.
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              5 ingredientes.
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              4 ingredientes.
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              3 ingredientes.
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> 
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="tab-pane fade" id="pastas" role="tabpanel" aria-labelledby="pastas-tab">Pastas</div>
+  <div class="tab-pane fade" id="adicionales" role="tabpanel" aria-labelledby="adicionales-tab">adds</div>
+</div>
+</div>
+<!-- Menú -->
+
+
+
+<footer class=" text-center text-black">
+
+  <!-- Grid container -->
+  <div class="container p-4">
+    <hr id="separador">
+    <!-- Section: Social media -->
+    <strong>Síguenos en nuestras redes sociales!</strong>
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-floating m-1" href="#!" role="button">
+        <img src="../IMG/facebook.png" width="40" alt="" srcset="">
+      </a>
+
+      <!-- Instagram -->
+      <a class="btn btn-floating m-1" href="#!" role="button">
+        <img src="../IMG/instagram.png" width="45" alt="" srcset="">
+      </a>
+
+      <!-- Whatsapp -->
+      <a class="btn btn-floating m-1" href="https://api.whatsapp.com/send?phone=527712012669"
+        role="button">
+        <img src="../IMG/whatsapp.png" width="40" alt="" srcset="">
+      </a>
+
+      <hr id="separador">
+
+
+
+      <!-- Section: Social media -->
+
+
+
+      <section class="container-fluid">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Nuestra empresa</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="../HTML/Nosotros.html" class="text-white">Acerca de nosotros</a>
+              </li>
+              <li>
+                <a href="./Terminos.html" class="text-white">Términos y condiciones</a>
+              </li>
+              <li>
+                <a href="./Avisodepriv.html" class="text-white">Aviso de privacidad</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Nuestra comida</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="./Ingredientes.html" class="text-white">Ingredientes</a>
+              </li>
+              <li>
+                <a href="./Nutricion.html" class="text-white">Nutrición</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Ayuda</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="./Contacto.html" class="text-white">Contáctanos</a>
+              </li>
+              <li>
+                <a href="./FAQ.html" class="text-white"> FAQ</a>
+              </li>
+          </div>
+          <!--Grid column-->
+
+
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Section: Text -->
+  <section class="mb-4">
+
+  </section>
+  <!-- Section: Text -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-light container-fluid" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p class="text-start text-break fw-normal lh-base m-4">
+      Ofertas disponibles por tiempo limitado en el restaurante Kee pizzas que participa. Los precios pueden variar.
+      No es válido para usar junto con otros cupones o descuentos. Todas las marcas registradas de bebidas son marcas
+      registradas de nuestros proveedores asociados. Algunas de las ofertas requieren la compra de varias pizzas.
+      Algunas de las ofertas solo estarán disponibles en línea. Algunas adiciones solo estarán disponibles para pizzas
+      de ofertas especiales con un costo adicional. Otras adiciones cuestan extra. Área limitada para domicilios.
+      Puede haber una tarifa por el domicilio, la cual no podrá descontarse. Hay un mínimo en tu compra para poder
+      tener derecho a domicilios. El cliente será responsable por las tasas correspondientes.
+    </p>
+    © Kee Pizza Todos los derechos reservados. 2022 diseño por:
+    <a class="text-black" href="">Luis Gustavo</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+    
 
     
     <!-- Option 1: Bootstrap Bundle with Popper -->

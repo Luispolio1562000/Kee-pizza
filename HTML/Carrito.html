@@ -1,151 +1,280 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="../CSS/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../IMG/pizza.ico" type="image/x-icon">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Carrito | Kee pizza</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-              <img
-                  src="../IMG/Logo_nav.jpeg"
-                  alt=""
-                  width="120"
-                  height=""
-                  class="d-inline-block align-text-top"
-                />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex justify-content-end ">
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="./HTML/Menú.html">
-                    Pizzas.
-                    <img src="../IMG/pizza_nav.png" width="55" alt=""  srcset="">
-                  </a>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../IMG/pizza.ico" type="image/x-icon">
+
+  <title>Kee pizzas | Carrito</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../IMG/Logo Secundario.png" alt="" width="200" height="" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end ">
+          <div class="collapse navbar-collapse col-lg-3 col-md-6 mb-4 mb-md-0" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active d-flex flex-column  fw-bold " aria-current="page" href="../HTML/Menú.html">
+                  Pizzas.
+                  <img class="align-self-center" src="../IMG/pizza_nav.png" width="45" alt="" srcset="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex flex-column fw-bold " aria-current="page" href="../HTML/Menú.html">
+                  Arma tu pizza.
+                  <img class="align-self-center" class="" src="../IMG/sombrero-de-cocinero.png" width="45" alt=""
+                    srcset="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Promociones.
+                  <img class="align-self-center" src="../IMG/caja-de-pizza.png" width="45" alt="" srcset="">
+                </a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Adicionales.
+                  <img class="align-self-center" src="../IMG/complementos.png" width="45" alt="" srcset="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <div class="container-fluid d-flex justify-content-evenly align-items-center m-3">
+        <a class=" btn btn-secondary d-flex flex-column m-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-x"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.354 5.646a.5.5 0 1 0-.708.708L7.793 7.5 6.646 8.646a.5.5 0 1 0 .708.708L8.5 8.207l1.146 1.147a.5.5 0 0 0 .708-.708L9.207 7.5l1.147-1.146a.5.5 0 0 0-.708-.708L8.5 6.793 7.354 5.646z" />
+            <path
+              d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+          </svg>
+          Vacíar
+        </a>
+        <div>
+          <a class="btn btn-danger fw-bold btn-lg" role="button" href="Menú.html">Seguir comprando</a>
+        </div>
+      </div>
+    </article>
+    <hr class="border border-secondary">
+    <div class="d-flex flex-row container-fluid">
+      <div class="col-xl-7 col-lg-7 col-md-6 col-sm-10">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th scope="col">Producto.</th>
+              <th scope="col">Descripción.</th>
+              <th scope="col">Cantidad.</th>
+              <th scope="col">Precio.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+        </table>
+      </div>
+      <div
+        class="container-fluid col-xl-5 col-lg-5 col-md-7 col-sm-10 d-flex justify-content-end align-items-start  flex-column m-3">
+        <div class="m-2" id="CartTotal">
+          <div class="input-group mb-3 m-2">
+            <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger btn-lg " type="button" id="button-addon2">Aplicar</button>
+          </div>
+          <hr class="border border-secondary">
+          <!-- Botón modal-->
+          <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Selecciona
+            una dirección de envío</button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="border border-secondary">
+          <div class="">
+            <p class="fs-5 fw-bold">Subtotal:</p>
+            <p class="fs-5 fw-bold">Costo de envío:</p>
+            <p class="fs-5 fw-bold">Descuentos:</p>
+            <p class="fs-5 fw-bold">Total:</p>
+          </div>
+          <hr class="border border-secondary">
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning">Realizar pedido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class=" text-center text-black">
+
+    <!-- Grid container -->
+    <div class="container p-4">
+      <hr id="separador">
+      <!-- Section: Social media -->
+      <strong>Síguenos en nuestras redes sociales!</strong>
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-floating m-1" href="#!" role="button">
+          <img src="../IMG/facebook.png" width="40" alt="" srcset="">
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" href="#!" role="button">
+          <img src="../IMG/instagram.png" width="45" alt="" srcset="">
+        </a>
+
+        <!-- Whatsapp -->
+        <a class="btn btn-floating m-1" href="https://api.whatsapp.com/send?phone=527712012669" role="button">
+          <img src="../IMG/whatsapp.png" width="40" alt="" srcset="">
+        </a>
+
+        <hr id="separador">
+
+
+
+        <!-- Section: Social media -->
+
+
+
+        <section class="container-fluid">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nuestra empresa</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../HTML/Nosotros.html" class="text-white">Acerca de nosotros</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="./HTML/Menú.html">
-                    Arma tu pizza.
-                    <img src="../IMG/sombrero-de-cocinero.png" width="55" alt=""  srcset="">
-                  </a>
+                <li>
+                  <a href="./Terminos.html" class="text-white">Términos y condiciones</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active d-flex flex-column" href="#">Promociones.
-                    <img src="../IMG/caja-de-pizza.png" width="55" alt="" srcset="">
-                  </a>
-                </li>
-                <li class="nav-item  ">
-                  <a class="nav-link active d-flex flex-column" href="#">Adicionales.
-                    <img src="../IMG/complementos.png" width="55" alt="" srcset="">
-                  </a>
+                <li>
+                  <a href="./Avisodepriv.html" class="text-white">Aviso de privacidad</a>
                 </li>
               </ul>
             </div>
-          </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <article>
-        <div class="container-fluid d-flex justify-content-evenly align-items-center m-3">
-          <a class=" btn btn-secondary d-flex flex-column m-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-x" viewBox="0 0 16 16">
-              <path d="M7.354 5.646a.5.5 0 1 0-.708.708L7.793 7.5 6.646 8.646a.5.5 0 1 0 .708.708L8.5 8.207l1.146 1.147a.5.5 0 0 0 .708-.708L9.207 7.5l1.147-1.146a.5.5 0 0 0-.708-.708L8.5 6.793 7.354 5.646z"/>
-              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-            </svg>
-            Vacíar
-          </a>
-          <div>
-          <a class="btn btn-danger fw-bold btn-lg" role="button" href="Menú.html">Seguir comprando</a>
-        </div>
-        </div>
-      </article>
-      <hr class="border border-secondary">
-      <div class="d-flex flex-row container-fluid">
-        <div class="col-xl-9 col-lg-9 col-md-7 col-sm-10 m-3" >
-          <table class="table text-center">
-            <thead>
-              <tr>
-                <th scope="col">Producto.</th>
-                <th scope="col">Descripción.</th>
-                <th scope="col">Cantidad.</th>
-                <th scope="col">Precio.</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-          </table>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-10 d-flex justify-content-end m-3">
-          <aside class=" m-2" id="CartTotal">
-            <div class="input-group mb-3 m-2">
-              <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-outline-primary btn-lg " type="button" id="button-addon2">Aplicar</button>
-            </div>
-            <hr class="border border-secondary">
-            <div class="">
-              <p class="fs-5 fw-bold">Subtotal:</p>
-              <p class="fs-5 fw-bold">Costo de envío:</p>
-              <p class="fs-5 fw-bold">Descuentos:</p>
-              <p class="fs-5 fw-bold">Total:</p>
-            </div>
-            <hr class="border border-secondary">
-            <div class="d-flex justify-content-center" >
-            <button type="button" class="btn btn-primary">Realizar pedido</button>
-          </div>
-          </aside>
-        </div>
-      </div>
-    </main>
-    <footer>Pie de página</footer>
-  
-    
-    
-        
-        
-        
-        
-          
-        </div>
-      </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nuestra comida</h5>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="./Ingredientes.html" class="text-white">Ingredientes</a>
+                </li>
+                <li>
+                  <a href="./Nutricion.html" class="text-white">Nutrición</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
 
-   
-  </body>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Ayuda</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="./Contacto.html" class="text-white">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="./FAQ.html" class="text-white"> FAQ</a>
+                </li>
+            </div>
+            <!--Grid column-->
+
+
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+
+    </section>
+    <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-light container-fluid" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p class="text-start text-break fw-normal lh-base m-4">
+        Ofertas disponibles por tiempo limitado en el restaurante Kee pizzas que participa. Los precios pueden variar.
+        No es válido para usar junto con otros cupones o descuentos. Todas las marcas registradas de bebidas son marcas
+        registradas de nuestros proveedores asociados. Algunas de las ofertas requieren la compra de varias pizzas.
+        Algunas de las ofertas solo estarán disponibles en línea. Algunas adiciones solo estarán disponibles para pizzas
+        de ofertas especiales con un costo adicional. Otras adiciones cuestan extra. Área limitada para domicilios.
+        Puede haber una tarifa por el domicilio, la cual no podrá descontarse. Hay un mínimo en tu compra para poder
+        tener derecho a domicilios. El cliente será responsable por las tasas correspondientes.
+      </p>
+      © Kee Pizza Todos los derechos reservados. 2022 diseño por:
+      <a class="text-black" href="">Luis Gustavo</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
