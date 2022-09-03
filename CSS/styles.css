@@ -48,7 +48,7 @@ background-size:contain;
 
 }
 footer{
-  background-color: #09A603;
+  background-color: #199D17;
 
 }
  
@@ -81,4 +81,58 @@ footer{
       height:63px;
       line-height: 66px;
 }
+}
+
+
+#buttoncard{
+  background-color: #FFAC0E;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  width: 100%;
+}
+
+#btnamarillo{
+  background-color: #FFAC0E;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  width: 100%;
+}
+#btncontacto{
+  background-color: #FFAC0E;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+#resumen  {
+  box-shadow: #000000 0px 2px 6px -2px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 15px;
+  margin: 0px 0px 0px 10px;
+  padding: 30px 30px 30px;
+  text-shadow: #000000 0px 0px 1px;
+  height: 450px;
+  width: 300px;
+}
+
+.menu{
+  background-color: #199D17;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  width: 100%;
 }

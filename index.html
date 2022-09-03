@@ -14,7 +14,7 @@
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 
   <link rel="shortcut icon" href="IMG/pizza.ico" type="image/x-icon">
-  <title>Kee pizza</title>
+  <title>Kee Pizzas</title>
 </head>
 
 <body class="bg-secondary bg-opacity-50">
@@ -45,13 +45,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active d-flex flex-column fw-bold " href="#">
+              <a class="nav-link active d-flex flex-column fw-bold " href="./HTML/Menú.html">
                 <img class="align-self-center" src="IMG/caja-de-pizza.png" width="45" alt="" srcset="">
                 Promociones
               </a>
             </li>
             <li class="nav-item  ">
-              <a class="nav-link active d-flex flex-column fw-bold " href="#">
+              <a class="nav-link active d-flex flex-column fw-bold " href="./HTML/Menú.html">
                 <img class="align-self-center" src="IMG/complementos.png" width="45" alt="" srcset="">
                 Adicionales
               </a>
@@ -77,45 +77,28 @@
   <div class="offcanvas offcanvas-end border border-end-0 border-warning" tabindex="-1" id="offcanvasRight"
     aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
-      <h5 id="offcanvasRightLabel">Carrito de compras</h5>
+      <h5 class="" id="offcanvasRightLabel">Carrito de compras</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <div class="border  border-warning">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Producto.</th>
-              <th scope="col">Descripción.</th>
-              <th scope="col">Cantidad.</th>
-              <th scope="col">Precio.</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="m-3 d-flex justify-content-center fw-bold">
-        <a class="btn btn-outline-warning  " href="./HTML/Carrito.html">
-          Efectuar compra
-        </a>
+      <div class=" " id="resumen">
+          <div class="input-group  m-2">
+            <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger btn-lg " type="button" id="button-addon2">Aplicar</button>
+          </div>
+          <hr class="border border-secondary">
+          <div class="">
+            <p class="fs-5 fw-bold">Subtotal:</p> 
+            <p class="fs-5 fw-bold">Costo de envío:</p>
+            <p class="fs-5 fw-bold">Descuentos:</p>
+            <p class="fs-5 fw-bold">Total:</p>
+          </div>
+          <hr class="border border-secondary">
+          <div class="d-flex justify-content-center">
+            <a type="button" class="btn" id="btnamarillo" href="./HTML/Carrito.html">Realizar pedido</a>
+          </div>
+        
       </div>
     </div>
   </div>
@@ -169,13 +152,12 @@
     </div>
   </div>
   <div class="m-3 container">
-    <div class="card m-2" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    <div class="card m-2 text-center" style="width: 18rem;">
+      <img src="IMG/Eventos.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-success">Go somewhere</a>
+        <h5 class="card-title">Eventos especiales</h5>
+        <p class="card-text">Queremos acompañarte en los momentos especiales.</p>
+        <a href="HTML/Contacto.html" class="btn btn-sm" id="buttoncard">Contáctanos!</a>
       </div>
     </div>
   </div>

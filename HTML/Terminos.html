@@ -12,10 +12,10 @@
     <title>Kee pizza | Nosotros</title>  </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
-            <img src="../IMG/Logo Secundario.png" alt="" width="200" height="" class="d-inline-block align-text-top" />
+            <img src="../IMG/Logo Secundario.png" alt="" width="325" height="" class="d-inline-block align-text-top" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,33 +26,39 @@
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link active d-flex flex-column  fw-bold " aria-current="page" href="../HTML/Menú.html">
-                    Pizzas.
+                    
                     <img class="align-self-center" src="../IMG/pizza_nav.png" width="45" alt="" srcset="">
+                    Pizzas
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active d-flex flex-column fw-bold " aria-current="page" href="../HTML/Menú.html">
-                    Arma tu pizza.
+                
                     <img class="align-self-center" class="" src="../IMG/sombrero-de-cocinero.png" width="45" alt="" srcset="">
+                    Arma tu pizza
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Promociones.
+                  <a class="nav-link active d-flex flex-column fw-bold " href="../HTML/Menú.html">
                     <img class="align-self-center" src="../IMG/caja-de-pizza.png" width="45" alt="" srcset="">
+                    Promociones
                   </a>
                 </li>
                 <li class="nav-item  ">
-                  <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Adicionales.
+                  <a class="nav-link active d-flex flex-column fw-bold " href="../HTML/Menú.html">
                     <img class="align-self-center" src="../IMG/complementos.png" width="45" alt="" srcset="">
+                    Adicionales
                   </a>
                 </li>
                 <li class="nav-item">
-                  <div>
-                    <button class="btn d-flex flex-column" type="button" data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <div class="">
+                    <button class="btn d-flex flex-column position-relative" type="button" 
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                       <img class="align-self-center" class="d-flex justify-content-center" src="../IMG/bolsa-de-la-compra.png"
                         width="45" alt="" srcset="">
-                      <label class="" for="">$ </label>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          0
+                        </span>
                     </button>
                   </div>
                 </li>

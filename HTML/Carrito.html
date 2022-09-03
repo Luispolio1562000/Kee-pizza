@@ -17,10 +17,10 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
-          <img src="../IMG/Logo Secundario.png" alt="" width="200" height="" class="d-inline-block align-text-top" />
+          <img src="../IMG/Logo Secundario.png" alt="" width="325" height="" class="d-inline-block align-text-top" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,26 +31,41 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active d-flex flex-column  fw-bold " aria-current="page" href="../HTML/Menú.html">
-                  Pizzas.
+                  
                   <img class="align-self-center" src="../IMG/pizza_nav.png" width="45" alt="" srcset="">
+                  Pizzas
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active d-flex flex-column fw-bold " aria-current="page" href="../HTML/Menú.html">
-                  Arma tu pizza.
-                  <img class="align-self-center" class="" src="../IMG/sombrero-de-cocinero.png" width="45" alt=""
-                    srcset="">
+              
+                  <img class="align-self-center" class="" src="../IMG/sombrero-de-cocinero.png" width="45" alt="" srcset="">
+                  Arma tu pizza
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Promociones.
+                <a class="nav-link active d-flex flex-column fw-bold " href="../HTML/Menú.html">
                   <img class="align-self-center" src="../IMG/caja-de-pizza.png" width="45" alt="" srcset="">
+                  Promociones
                 </a>
               </li>
               <li class="nav-item  ">
-                <a class="nav-link active d-flex flex-column fw-bold " href="../index.html">Adicionales.
+                <a class="nav-link active d-flex flex-column fw-bold " href="../HTML/Menú.html">
                   <img class="align-self-center" src="../IMG/complementos.png" width="45" alt="" srcset="">
+                  Adicionales
                 </a>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <button class="btn d-flex flex-column position-relative" type="button" 
+                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img class="align-self-center" class="d-flex justify-content-center" src="../IMG/bolsa-de-la-compra.png"
+                      width="45" alt="" srcset="">
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                      </span>
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -77,8 +92,8 @@
       </div>
     </article>
     <hr class="border border-secondary">
-    <div class="d-flex flex-row container-fluid">
-      <div class="col-xl-7 col-lg-7 col-md-6 col-sm-10">
+    <div class="d-flex flex-row flex-wrap">
+      <div class="col-xl-8 col-lg-8  col-md-6 col-sm-12 m-2" >
         <table class="table text-center">
           <thead>
             <tr>
@@ -90,13 +105,17 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <th scope="row"> 
+                <img class="img-fluid" src="../IMG/card 1.jpg" alt="175" width="175" srcset="">
+              </th>
+              <td>Pizza totalmente cubierta de pepperoni</td>
+              <td>1</td>
+              <td>$180.00</td>
             </tr>
             <tr>
-              <th scope="row">2</th>
+              <th scope="row">
+                <img class="img-fluid" src="../IMG/card 2.jpg" alt="175" width="175">
+              </th>
               <td>Jacob</td>
               <td>Thornton</td>
               <td>@fat</td>
@@ -108,11 +127,9 @@
             </tr>
           </tbody>
         </table>
-        </table>
       </div>
-      <div
-        class="container-fluid col-xl-5 col-lg-5 col-md-7 col-sm-10 d-flex justify-content-end align-items-start  flex-column m-3">
-        <div class="m-2" id="CartTotal">
+      <div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 m-2" id="resumen">
           <div class="input-group mb-3 m-2">
             <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username"
               aria-describedby="button-addon2">
@@ -128,22 +145,82 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <div>
+                    <div class="row">
+                      <div class="col-md-8 mb-4">
+                        <div class="card mb-4">
+                          <div class="card-header py-3">
+                            <h5 class="mb-0">Datos de entrega</h5>
+                          </div>
+                          <div class="card-body">
+                            <form>
+                              <!-- 2 column grid layout with text inputs for the first and last names -->
+                              <div class="row mb-4">
+                                <div class="col">
+                                  <div class="form-outline">
+                                    <input type="text" id="form7Example1" class="form-control" />
+                                    <label class="form-label" for="form7Example1">First name</label>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="form-outline">
+                                    <input type="text" id="form7Example2" class="form-control" />
+                                    <label class="form-label" for="form7Example2">Last name</label>
+                                  </div>
+                                </div>
+                              </div>
+                    
+                              <!-- Text input -->
+                              <div class="form-outline mb-4">
+                                <input type="text" id="form7Example3" class="form-control" />
+                                <label class="form-label" for="form7Example3">Company name</label>
+                              </div>
+                    
+                              <!-- Text input -->
+                              <div class="form-outline mb-4">
+                                <input type="text" id="form7Example4" class="form-control" />
+                                <label class="form-label" for="form7Example4">Address</label>
+                              </div>
+                    
+                              <!-- Email input -->
+                              <div class="form-outline mb-4">
+                                <input type="email" id="form7Example5" class="form-control" />
+                                <label class="form-label" for="form7Example5">Email</label>
+                              </div>
+                    
+                              <!-- Number input -->
+                              <div class="form-outline mb-4">
+                                <input type="number" id="form7Example6" class="form-control" />
+                                <label class="form-label" for="form7Example6">Phone</label>
+                              </div>
+                    
+                              <!-- Message input -->
+                              <div class="form-outline mb-4">
+                                <textarea class="form-control" id="form7Example7" rows="4"></textarea>
+                                <label class="form-label" for="form7Example7">Additional information</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Modal -->
           <hr class="border border-secondary">
           <div class="">
-            <p class="fs-5 fw-bold">Subtotal:</p>
+            <p class="fs-5 fw-bold">Subtotal:</p> <label for=""></label>
             <p class="fs-5 fw-bold">Costo de envío:</p>
             <p class="fs-5 fw-bold">Descuentos:</p>
             <p class="fs-5 fw-bold">Total:</p>
