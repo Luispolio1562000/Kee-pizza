@@ -21,7 +21,7 @@ function CargarInfo(){
                     <th scope="row">
                         
                     </th>
-                    <td>${Tamanio,",",Adicionales,",",Masa }</td>
+                    <td>${Tamanio + ", " + Adicionales + ", " + "Masa " + Masa }</td>
                     <td>1</td>
                     <td>${Precio}</td>
                 </tr>
