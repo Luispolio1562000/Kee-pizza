@@ -281,9 +281,10 @@
                             </div>
                             <div class="collapse" id="collapseExample">
                               <div class="card card-body">
+                                <form action="">
                                 <ul class="list-group list-group-flush">
                                   <li class="list-group-item">
-                                    <select class="form-select form-select-sm m-2" aria-label=".form-select-sm example">
+                                    <select class="form-select form-select-sm m-2" id="selectam" aria-label=".form-select-sm example">
                                       <option selected>Selecciona el tamaño.</option>
                                       <option value="1">Chica</option>
                                       <option value="2">Mediana</option>
@@ -293,7 +294,7 @@
                                   </li>
                                   <li class="list-group-item">
                                     <strong>Agrega extras a tu pizza.</strong>
-                                    <select class="form-select form-select-sm m-2" aria-label=".form-select-sm example">
+                                    <select class="form-select form-select-sm m-2" id="selectext" aria-label=".form-select-sm example">
                                       <option selected>
                                         Elige orilla o queso extra.
                                       </option>
@@ -324,15 +325,15 @@
                                     <strong>Selecciona tu tipo de masa.</strong>
                                     <div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                          id="flexRadioDefault1" />
-                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <input class="form-check-input" type="radio" name="masas"
+                                          id="flexRadioDefault1" value="Americana"/>
+                                        <label class="form-check-label" for="flexRadioDefault1" >
                                           Masa americana.
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                          id="flexRadioDefault2" checked />
+                                        <input class="form-check-input" type="radio" name="masas"
+                                          id="flexRadioDefault2" value="Romana" checked />
                                         <label class="form-check-label" for="flexRadioDefault2">
                                           Masa Romana.
                                         </label>
@@ -351,7 +352,8 @@
                             /> --->
                                   </li>
                                 </ul>
-                                <a href="#" class="btn btn-success">Agregar</a>
+                                <button href="#" type="reset" id="ordenar"  class="btn btn-success">Agregar</button>
+                              </form>
                               </div>
                             </div>
                           </div>
@@ -384,7 +386,7 @@
                                       <option value="1">Chica</option>
                                       <option value="2">Mediana</option>
                                       <option value="3">Grande</option>
-                                      <option value="3">Familiar</option>
+                                      <option value="4">Familiar</option>
                                     </select>
                                   </li>
                                   <li class="list-group-item">
@@ -402,16 +404,16 @@
                                       <option value="3">
                                         Orilla de queso philadelphia.
                                       </option>
-                                      <option value="3">
+                                      <option value="4">
                                         Orilla de queso gouda.
                                       </option>
-                                      <option value="3">
+                                      <option value="5">
                                         Porción extra 3 quesos.
                                       </option>
-                                      <option value="3">
+                                      <option value="6">
                                         Porción extra queso mozzarella
                                       </option>
-                                      <option value="3">
+                                      <option value="7">
                                         Porción extra queso gouda.
                                       </option>
                                     </select>
@@ -542,7 +544,7 @@
                               /> --->
                                     </li>
                                   </ul>
-                                  <a href="#" class="btn btn-success">Agregar</a>
+                                  <a href="#" id="ordenar" class="btn btn-success">Agregar</a>
                                 </div>
                               </div>
                             </div>
@@ -638,7 +640,7 @@
                               /> --->
                                     </li>
                                   </ul>
-                                  <a href="#" class="btn btn-success">Agregar</a>
+                                  <a href="#" type class="btn btn-success">Agregar</a>
                                 </div>
                               </div>
                             </div>
@@ -2739,48 +2741,9 @@
       </div>
       <div class="tab-pane fade" id="pastas" role="tabpanel" aria-labelledby="pastas-tab">Pastas</div>
       <div class="tab-pane fade" id="adicionales" role="tabpanel" aria-labelledby="adicionales-tab">
-
-        <div class="container m-3">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Entradas
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Bebidas
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                 Extras
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+        <h1>Adicionales</h1>
+      </div>
+  </div>
   </div>
   <!-- Menú -->
 
@@ -2879,7 +2842,7 @@
 
     </section>
     <!-- Section: Text -->
-    </div>
+    
     <!-- Grid container -->
 
     <!-- Copyright -->
@@ -2910,6 +2873,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="../JS/jquery.min.js"></script>
+  <script src="../JS/LocalStorage.js"></script>
 </body>
 
 </html>

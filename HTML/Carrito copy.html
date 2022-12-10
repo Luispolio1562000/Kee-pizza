@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../IMG/pizza.ico" type="image/x-icon">
+<link rel="stylesheet" href="../CSS/styles.css">
+  <title>Kee pizzas | Carrito</title>
+</head>
+
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../IMG/Logo Secundario.png" alt="" width="325" height="" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end ">
+          <div class="collapse navbar-collapse col-lg-3 col-md-6 mb-4 mb-md-0" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active d-flex flex-column  fw-bold"  type="button" aria-current="page"  onclick="mostrarPizzas()">
+                  
+                  <img class="align-self-center" src="../IMG/pizza_nav.png" width="45" alt="" srcset="">
+                  Pizzas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex flex-column fw-bold " aria-current="page" href="./Armapizza.html">
+              
+                  <img class="align-self-center" class="" src="../IMG/sombrero-de-cocinero.png" width="45" alt="" srcset="">
+                  Arma tu pizza
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-flex flex-column fw-bold " type="button" onclick="mostrarProm()">
+                  <img class="align-self-center" src="../IMG/caja-de-pizza.png" width="45" alt="" srcset="">
+                  Promociones
+                </a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link active d-flex flex-column fw-bold " type="button" onclick="mostrarAdic()">
+                  <img class="align-self-center" src="../IMG/complementos.png" width="45" alt="" srcset="">
+                  Adicionales
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="">
+                  <button class="btn d-flex flex-column position-relative" type="button" 
+                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img class="align-self-center" class="d-flex justify-content-center" src="../IMG/bolsa-de-la-compra.png"
+                      width="45" alt="" srcset="">
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                      </span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end border border-end-0 border-warning" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="" id="offcanvasRightLabel">Carrito de compras</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class=" " id="resumen">
+          <div class="input-group  m-2">
+            <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger btn-lg " type="button" id="button-addon2">Aplicar</button>
+          </div>
+          <hr class="border border-secondary">
+          <div class="">
+            <p class="fs-5 fw-bold">Subtotal:</p> 
+            <p class="fs-5 fw-bold">Costo de envío:</p>
+            <p class="fs-5 fw-bold">Descuentos:</p>
+            <p class="fs-5 fw-bold">Total:</p>
+          </div>
+          <hr class="border border-secondary">
+          <div class="d-flex justify-content-center">
+            <a type="button" class="btn" id="btnamarillo" href="./Carrito.html">Realizar pedido</a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas -->
+  <main id="contenido">
+    <article>
+      <div class="container-fluid d-flex justify-content-evenly align-items-center m-3">
+        <a class=" btn btn-secondary d-flex flex-column m-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-x"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.354 5.646a.5.5 0 1 0-.708.708L7.793 7.5 6.646 8.646a.5.5 0 1 0 .708.708L8.5 8.207l1.146 1.147a.5.5 0 0 0 .708-.708L9.207 7.5l1.147-1.146a.5.5 0 0 0-.708-.708L8.5 6.793 7.354 5.646z" />
+            <path
+              d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+          </svg>
+          Vacíar
+        </a>
+        <div>
+          <a class="btn btn-danger fw-bold btn-lg" role="button" onclick="mostrarProm()">Seguir comprando</a>
+        </div>
+      </div>
+    </article>
+    <hr class="border border-secondary">
+    <div class="d-flex flex-row flex-wrap">
+      <div class="col-xl-8 col-lg-8  col-md-6 col-sm-12 m-2">
+        <!--Tabla-->
+        <table class="table table-hover text-center">
+          <thead>
+            <tr>
+              <th scope="col">Producto.</th>
+              <th scope="col">Descripción.</th>
+              <th scope="col">Cantidad.</th>
+              <th scope="col">Precio.</th>
+            </tr>
+          </thead>
+          <tbody id="productos" >
+
+          </tbody>
+        </table>
+        <!--Tabla-->
+      </div>
+      <div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 m-2" id="resumen">
+          <div class="input-group mb-3 m-2">
+            <input type="text" class="form-control" placeholder="Digita el código" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger btn-lg " type="button" id="button-addon2">Aplicar</button>
+          </div>
+          <hr class="border border-secondary">
+          <!-- Botón modal-->
+          <div class="text-center">
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Selecciona
+              una dirección de envío</button>
+          </div>
+          <!-- Botón modal-->
+          <!-- Modal -->
+          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body " >
+
+                  <div class="card-header py-3 text-center">
+                    <h5 class="mb-0">COMPLETA Y CONFIRMA TUS DATOS DE ENTREGA</h5>
+                  </div>
+                  <div>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example1" class="form-control" />
+                          <label class="form-label" for="form7Example1">Nombre(s)</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example2" class="form-control" />
+                          <label class="form-label" for="form7Example2">Apellidos</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Text input -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example1" class="form-control" />
+                          <label class="form-label" for="form7Example1">Calle</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example2" class="form-control" />
+                          <label class="form-label" for="form7Example2">Número exterior</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example2" class="form-control" />
+                          <label class="form-label" for="form7Example2">Número interior</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Text input -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example1" class="form-control" />
+                          <label class="form-label" for="form7Example1">Código postal</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Colonia</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <label class="form-label" for="form7Example2">Colonia</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example2" class="form-control" />
+                          <label class="form-label" for="form7Example2">Referencias y/o entre calles</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Text input -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example1" class="form-control" />
+                          <label class="form-label" for="form7Example1">Ciudad</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example2" class="form-control" />
+                          <label class="form-label" for="form7Example2">Municipio</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example2" class="form-control" />
+                          <label class="form-label" for="form7Example2">Estado</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Text input -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example1" class="form-control" />
+                          <label class="form-label" for="form7Example1">Teléfono</label>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <hr class="border border-secondary">
+          <div class="">
+            <p class="fs-5 fw-bold">Subtotal:</p> <label for=""></label>
+            <p class="fs-5 fw-bold">Costo de envío:</p>
+            <p class="fs-5 fw-bold">Descuentos:</p>
+            <p class="fs-5 fw-bold">Total:</p>
+          </div>
+          <hr class="border border-secondary">
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning fw-bold btn-lg" onclick="continuarCompra()">Realizar pedido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+              <div class="d-flex justify-content-center text-center">
+              <h5 class="modal-title fw-bold" id="exampleModalLabel">Mitad y Mitad</h5>
+          </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="">
+
+
+                  <form>
+                      <div class="d-flex justify-content-center m-2">
+                          <div class="m-3">
+                              <h3 class="fs-5 fw-bold text-center">Selecciona el tamaño </h3>
+                              <select class="form-select form-select-sm m-2" id="selectam" aria-label=".form-select-sm example">
+                                  <option selected>Selecciona el tamaño.</option>
+                                  <option value="1">Chica</option>
+                                  <option value="2">Mediana</option>
+                                  <option value="3">Grande</option>
+                                  <option value="4">Familiar</option>
+                              </select>
+                          </div>
+                          <div class="m-3" id="masa">
+                              <h3 class="fs-5 fw-bold text-center">Elige tu masa</h3>
+                                  <div id="combobox">
+                                      <div class="form-check" id="americana">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                              id="flexRadioDefault1" />
+                                          <label class="form-check-label" for="flexRadioDefault1">
+                                              Masa americana.
+                                          </label>
+                                      </div>
+                                      <div class="form-check" id="romana">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                              id="flexRadioDefault2" checked />
+                                          <label class="form-check-label" for="flexRadioDefault2">
+                                              Masa Romana.
+                                          </label>
+                                      </div>
+                                  </div>
+                          </div>
+                      </div>
+
+
+                      <hr class="border border-secondary">
+                      <div>
+                          <h3 class="fs-5 fw-bold text-center">Seleccione las mitades</h3>
+                              <div class="d-flex justify-content-center m-3">
+                                  <div class="m-3">
+                                      <label for="">Mitad izquierda</label>
+                                      <select class="form-select form-select-sm m-2"
+                                          aria-label=".form-select-sm example">
+                                          <option selected>Selecciona una mitad</option>
+                                          <option value="1">Chica</option>
+                                          <option value="2">Mediana</option>
+                                          <option value="3">Grande</option>
+                                          <option value="3">Familiar</option>
+                                      </select>
+                                  </div>
+                                  <div class="m-3">
+                                      <label for="">Mitad derecha</label>
+                                      <select class="form-select form-select-sm m-2"
+                                          aria-label=".form-select-sm example">
+                                          <option selected>Selecciona una mitad</option>
+                                          <option value="1">Chica</option>
+                                          <option value="2">Mediana</option>
+                                          <option value="3">Grande</option>
+                                          <option value="3">Familiar</option>
+                                      </select>
+                                  </div>
+                              </div>
+                      </div>
+                      <hr class="border border-secondary">
+                      <div class="d-flex justify-content-center m-2">
+                      <div class="d-inline m-3">
+                          <h3 class="fs-5 fw-bold text-center ">Cantidad</h3>
+                          <div class="d-flex justify-content-center wrapper">
+                              <span class="minus">-</span>
+                              <span class="num">01</span>
+                              <span class="plus">+</span>
+                          </div>
+                      </div>
+                          <div class="m-3">
+                              <h3 class="fs-5 fw-bold text-center m-2">Total</h3>
+                              <strong>$</strong> <label for="">5555</label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <hr class="border border-secondary">
+              <div class="m-2">
+                  <label for="" class="fw-bold">¿Quieres cambiar algún ingrediente? Utiliza nuestro:</label> 
+                  <a href="">Creador de pizza</a>
+              </div>
+              </form>
+
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger fw-bold" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn emergente fw-bold">Agregar al carrito</button>
+              </div>
+      
+          </div>
+
+      </div>
+  </div>
+<!-- Modal -->
+  <footer class=" text-center text-black">
+
+    <!-- Grid container -->
+    <div class="container p-4">
+      <hr id="separador">
+      <!-- Section: Social media -->
+      <strong>Síguenos en nuestras redes sociales!</strong>
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-floating m-1" href="#!" role="button">
+          <img src="../IMG/facebook.png" width="40" alt="" srcset="">
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" href="#!" role="button">
+          <img src="../IMG/instagram.png" width="45" alt="" srcset="">
+        </a>
+
+        <!-- Whatsapp -->
+        <a class="btn btn-floating m-1" href="https://api.whatsapp.com/send?phone=527712012669" role="button">
+          <img src="../IMG/whatsapp.png" width="40" alt="" srcset="">
+        </a>
+
+        <hr id="separador">
+
+
+
+        <!-- Section: Social media -->
+
+
+
+        <section class="container-fluid">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nuestra empresa</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../HTML/Nosotros.html" class="text-white">Acerca de nosotros</a>
+                </li>
+                <li>
+                  <a href="./Terminos.html" class="text-white">Términos y condiciones</a>
+                </li>
+                <li>
+                  <a href="./Avisodepriv.html" class="text-white">Aviso de privacidad</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nuestra comida</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="./Ingredientes.html" class="text-white">Ingredientes</a>
+                </li>
+                <li>
+                  <a href="./Nutricion.html" class="text-white">Nutrición</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Ayuda</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="./Contacto.html" class="text-white">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="./FAQ.html" class="text-white"> FAQ</a>
+                </li>
+            </div>
+            <!--Grid column-->
+
+
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+
+    </section>
+    <!-- Section: Text -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-light container-fluid" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p class="text-start text-break fw-normal lh-base m-4">
+        Ofertas disponibles por tiempo limitado en el restaurante Kee pizzas que participa. Los precios pueden variar.
+        No es válido para usar junto con otros cupones o descuentos. Todas las marcas registradas de bebidas son marcas
+        registradas de nuestros proveedores asociados. Algunas de las ofertas requieren la compra de varias pizzas.
+        Algunas de las ofertas solo estarán disponibles en línea. Algunas adiciones solo estarán disponibles para pizzas
+        de ofertas especiales con un costo adicional. Otras adiciones cuestan extra. Área limitada para domicilios.
+        Puede haber una tarifa por el domicilio, la cual no podrá descontarse. Hay un mínimo en tu compra para poder
+        tener derecho a domicilios. El cliente será responsable por las tasas correspondientes.
+      </p>
+      © Kee Pizza Todos los derechos reservados. 2022 diseño por:
+      <a class="text-black" href="">Luis Gustavo</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="../JS/Funciones.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/filtro.js"></script>
+   <script src="../JS/LocalStorage.js"></script>
+   <script src="../JS/Carrito.js"></script>
+
+</body>
+
+</html>
