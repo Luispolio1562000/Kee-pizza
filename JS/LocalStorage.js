@@ -49,7 +49,12 @@ function actualizar() {
 
 
 
+document.getElementById('pizza_mitad').onclick = function() {
 
+
+
+    
+}
 
 
     
